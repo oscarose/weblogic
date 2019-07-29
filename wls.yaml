@@ -1,0 +1,7 @@
+---
+- hosts: all
+  gather_facts: yes
+  tasks:
+
+    - name: Run weblogic deployer script
+      script: wls.sh {{ wls_user }} {{ wls_pwd }}
